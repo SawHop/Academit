@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Домашняя работа</title>
+</head>
+<body>
+    <form action="handler.php" method="post">
+        <p><b>Введите комментарий:</b></p>
+        <input type="text" />
+        <p><button type="submit">Отправить комментарий</button></p>
+
+        <p><b>Введите ваш отзыв:</b></p>
+        <p><textarea name="comment"></textarea></p>
+        <p><button type="submit">Отправить отзыв</button></p>
+
+        <label>
+            <b>Выберите позицию:</b>
+            <input name="radio" checked="checked" value="1" type="radio" />1
+            <input name="radio" value="2" type="radio" />2
+            <button type="submit">Отправить запрос</button>
+        </label>
+
+        <p><b>Выберите товар:</b></p>
+        <input name="checkbox" checked="checked" value="1" type="checkbox" />1
+        <input name="checkbox" value="2" type="checkbox" />2
+        <input name="checkbox" value="3" type="checkbox" />3
+        <button type="submit">Отправить запрос</button>
+
+        <p><b>Выберите товар:</b></p>
+        <select>
+            <option disabled selected value="Выберите товар">Выберите товар</option>
+            <option value="Шаурма">Шаурма</option>
+            <option value="Мясо">Мясо</option>
+            <option value="Арахисовая паста">Арахисовая паста</option>
+            <option value="Шоколад">Шоколад</option>
+        </select>
+        <input type="submit" value="Отправить">
+
+        <p><b>Выберите песни из списка:</b></p>
+        <select multiple name="songs[]">
+            <option disabled selected value="Выберите песню">Выберите песню</option>
+            <option value="Power of the horde">Power of the horde</option>
+            <option value="Crash">Crash</option>
+            <option value="Fade Out">Fade Out</option>
+            <option value="Ugly">Ugly</option>
+        </select>
+        <p><input type="submit" value="Отправить"></p>
+
+        <p><button type="submit" value="true">Вам понравилось у нас на сайте?</button></p>
+    </form>
+</body>
+</html>

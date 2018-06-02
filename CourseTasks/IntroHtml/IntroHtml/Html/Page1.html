@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Домашняя работа</title>
+</head>
+<body>
+    <form action="handler.php" method="post">
+        <div><b>Введите комментарий:</b></div>
+        <input type="text" />
+        <div><button type="submit">Отправить комментарий</button></div>
+    </form>
+    <form action="handler.php" method="post">
+        <div><b>Введите ваш отзыв:</b></div>
+        <div><textarea name="comment"></textarea></div>
+        <div><button type="submit">Отправить отзыв</button></div>
+    </form>
+    <form action="handler.php" method="post">
+        <b>Выберите позицию:</b>
+        <label>
+            <input name="radio" checked="checked" value="1" type="radio" />1
+        </label>
+        <label>
+            <input name="radio" value="2" type="radio" />2
+        </label>
+        <button type="submit">Отправить запрос</button>
+    </form>
+    <form action="handler.php" method="post">
+        <div><b>Выберите товар:</b></div>
+        <label>
+            <input name="checkbox" checked="checked" value="1" type="checkbox" />1
+        </label>
+        <label>
+            <input name="checkbox" value="2" type="checkbox" />2
+        </label>
+        <label>
+            <input name="checkbox" value="3" type="checkbox" />3
+        </label>>
+        <button type="submit">Отправить запрос</button>
+    </form>
+    <form action="handler.php" method="post">
+        <div><b>Выберите товар:</b></div>
+        <select>
+            <option disabled selected value="Выберите товар">Выберите товар</option>
+            <option value="Шаурма">Шаурма</option>
+            <option value="Мясо">Мясо</option>
+            <option value="Арахисовая паста">Арахисовая паста</option>
+            <option value="Шоколад">Шоколад</option>
+        </select>
+        <input type="submit" value="Отправить">
+    </form>
+    <form action="handler.php" method="post">
+        <div><b>Выберите песни из списка:</b></div>
+        <select multiple name="songs[]">
+            <option disabled selected value="Выберите песню">Выберите песню</option>
+            <option value="Power of the horde">Power of the horde</option>
+            <option value="Crash">Crash</option>
+            <option value="Fade Out">Fade Out</option>
+            <option value="Ugly">Ugly</option>
+        </select>
+        <div><input type="submit" value="Отправить"></div>
+    </form>
+    <div>
+        <button type="submit" value="true">Вам понравилось у нас на сайте?</button>
+    </div>
+</body>

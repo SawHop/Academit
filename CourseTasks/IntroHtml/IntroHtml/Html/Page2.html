@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Домашняя работа</title>
@@ -11,34 +12,50 @@
         Абзац
     </p>
     <img src="Picture.jpg" alt="Картинка">
-    </br>
+    <br />
     <table border="1">
-        <tr>
-            <th colspan="2">Столбец 1</th>
-        </tr>
-        <tr>
-            <td>Ячейка 1</td>
-            <td>Ячейка 2</td>
-        </tr>
+        <thead>
+            <tr>
+                <th colspan="2">Столбец 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+            </tr>
+        </tbody>
     </table>
     <hr />
     <table border="1">
-        <tr>
-            <th>Столбец1</th>
-            <th>Столбец2</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Ячейка 1</td>
-            <td>Ячейка 2</td>
-        </tr>
-        <tr>
-            <td>Ячейка 3</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Столбец1</th>
+                <th>Столбец2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ячейка 1</td>
+                <td>Ячейка 2</td>
+            </tr>
+            <tr>
+                <td>Ячейка 3</td>
+            </tr>
+        </tbody>
     </table>
     <div>
-        <a href="file:///C:/Users/SawHo/Source/Repos/Academit/CourseTasks/IntroHtml/IntroHtml/Html/Page1.html">Ссылка на первую страницу домашней работы</a>>
+        <a href="Page1.html">
+            Ссылка на первую страницу домашней работы
+        </a>>
+    </div>
+    <div>
+        <a href="Page1.html" _blank">
+            <img src="Picture.jpg" alt="Картинка">
+        </a>>
     </div>
     <div>
         <input type="File" />
     </div>
 </body>
+</html>

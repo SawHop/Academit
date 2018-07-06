@@ -9,26 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (a == 0 && b == 0 && c == 0) {
             result = "Х любое число";
-        }
-        else if (a == 0 && b == 0) {
+        } else if (a == 0 && b == 0) {
             result = "Решений нет";
-        }
-        else if (a == 0) {
+        } else if (a == 0) {
             x1 = -c / b;
             result = x1;
-        }
-        else if (d > 0) {
+        } else if (d > 0) {
             var x1 = (-b - Math.sqrt(d)) / (2 * a);
             var x2 = (-b + Math.sqrt(d)) / (2 * a);
             var result = "x1 = " + x1 + ", x2 = " + x2;
-        }
-        else if (d == 0) {
+        } else if (d == 0) {
             x1 = -b / (2 * a);
             result = x1;
-        }
-        else {
+        } else {
             result = "Решений нет";
         }
+
         var resultInHtml = document.getElementById("result");
         resultInHtml.innerHTML = result;
     });

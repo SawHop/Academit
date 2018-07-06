@@ -14,7 +14,7 @@ list.sort(compareNumeric);
 console.log("Массив отсортирован по убыванию = " + list);
 
 //Подмассив из последних пяти элементов
-var list1 = list.slice(list.length - 5, list.length + 1);
+var list1 = list.slice(list.length - 5);
 console.log("Последние пять элементов массива = " + list1);
 
 //Подмассив из первых пяти элементов
@@ -23,18 +23,15 @@ console.log("Первые пять элементов массива = " + list2
 var sum = 0;
 
 //Сумма четных элементов массива
-for (i = 0; i < list.length; i++) {
-    if (list[i] % 2 == 0) {
-        sum += list[i];
-    }
-}
-console.log("Сумма четных элементов массива = " + sum);
+var list3 = list.filter(function (x) {
+    return x % 2 === 0;
+});
+
+var result = list3.reduce(function (sum, current) {
+    return sum + current;
+});
+console.log("Сумма четных элементов массива = " + result);
 
 //Список квадратов чисел из массива
-var list3 = []
-for (i = 0; i < list.length; i++) {
-    var element = Math.pow(list[i], 2);
-    list3.push(element);
-}
-
+var list3 = list.map((x) => Math.pow(x, 2));
 console.log("Список квадратов чисел из массива = " + list3);

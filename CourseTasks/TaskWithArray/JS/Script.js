@@ -29,9 +29,12 @@ var list3 = list.filter(function (x) {
 
 var result = list3.reduce(function (sum, current) {
     return sum + current;
-});
+}, 0);
 console.log("Сумма четных элементов массива = " + result);
 
 //Список квадратов чисел из массива
-var list3 = list.map((x) => Math.pow(x, 2));
+var list3 = list.map(function (x) {
+    return Math.pow(x, 2);
+});
 console.log("Список квадратов чисел из массива = " + list3);
+

@@ -16,17 +16,19 @@ app.get('/', function (req, res) {
 });
 
 app.get('/contact', function (req, res) {
-    res.render('contact');
+    res.render('contact', { again: false });
 });
 
 app.post('/contact', urlencodedParser, function (req, res) {
     if (!req.body) {
         return res.sendStatus(400);
     }
-    else {
-        console.log(req.body);
+    if (req.body.email != "" && req.body.name != "" && req.body.city != "" && req.body.message != "" && req.body.check == "on") {
+        res.render('contactSuccess', { info: req.body });
+    } else {
+        res.render('contact', { info: req.body, again: true });
     }
-    res.render('contact');
 });
+
 
 app.listen(3000);

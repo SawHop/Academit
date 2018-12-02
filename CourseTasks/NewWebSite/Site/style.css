@@ -1,0 +1,44 @@
+body{
+    background: rgba(219, 229, 238, 0.863)
+}
+
+.image {
+    text-align: center;
+}
+
+.block{
+    width: 300px;
+    height: 200px;
+    margin-left: 54px;
+    margin-top: 40px;
+    text-align: center;
+    float: left;
+}
+
+.block p{
+    background: rgb(227, 239, 248);
+}
+
+h3 a {
+    color : rgb(17, 16, 16);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding-top:20px;
+    float: left;
+    padding-left: 250px;
+    bottom: 0;
+}
+
+#comment{
+    float: center;
+    padding-top: 20px;
+}
+
+#mes{
+    Color: rgb(167, 167, 241)
+}

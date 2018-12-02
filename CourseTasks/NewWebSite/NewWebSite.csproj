@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E6B8F35-5681-4DD1-850A-7DFB3A439E5A}</ProjectGuid>
+    <ProjectGuid>{B514A2CA-F9A4-4FDE-AD55-9E80848F6FA0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PhoneBook</RootNamespace>
-    <AssemblyName>PhoneBook</AssemblyName>
+    <RootNamespace>NewWebSite</RootNamespace>
+    <AssemblyName>NewWebSite</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,10 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Index.html" />
-    <Content Include="Script.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

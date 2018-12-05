@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+#header{
+    height: 230px;
+    width: 100%;
+    background: #DCDCDC;
+}
+
+#menu{
+    height: 80px;
+    width: 100%;
+    background: #777777;
+}
+
+#bodyy{
+    background: #ffffff;
+    height: 1388px;
+}
+
+#slider{
+    height: 400px;
+}
+
+ #square {
+    position: absolute;
+	width: 100px;
+	height: 100px;
+    background: #777777;
+    left: 212px;
+    top: 66px;
+}
+
+#CompanyNameFirst{
+    padding-top: 7px;
+    position: absolute;
+    color: #777777;
+    left:  324px;
+    top: 66px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+a h3{
+    color: #777777;;
+}
+
+#numbers{
+    padding-right: 214px;
+    padding-top: 45px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 32px;
+    line-height: 30px;
+    color: #777777;
+    font-weight:100; 
+}
+
+#call{
+    font-size: 21px;
+    float: right;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+#call a{
+    font-size: 21px;
+    float: right;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    color: #777777;
+}
+
+#menu{
+    text-align:center;
+}
+
+#linksMenu{
+    padding-top:29px;
+}
+
+#linksMenu li{
+    display: inline;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+ul li :hover{
+    text-decoration: underline;
+}
+
+#slider {
+    position: relative;
+	text-align: center;
+}
+
+#slider{
+	margin: 0 auto;
+}
+
+#slides article{
+	width: 20%;
+    float: left;
+    height: 400px;
+}
+
+#slides .image{
+    width: 500%;
+	line-height: 0;
+}
+
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{
+	width: 100%;
+}
+
+#desktop:checked ~ #slider{
+	max-width: 100%;
+}
+
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('prev.png') no-repeat;
+	float: left;
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; 
+	float: right;
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{
+	cursor: pointer;
+}
+
+.all input{
+	display: none;
+}
+
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#slides .image{
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#footer{
+    background: #777777;
+    height: 220px; 
+ }
+
+ .aboutCompany{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top:50px;
+    padding-left: 204px;
+    color: #ffffff;
+    float: left;
+
+ }
+
+ #footerLinksMenu a{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    display: block;
+    padding-left:554px;
+ }
+
+ #footerLinksMenu{
+    padding-top: 50px; 
+ }
+
+
+#nav{
+    height: 30px;
+    padding-left: 180px;
+}
+
+#nav ul a{
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+#nav ul a:nth-child(3){
+    text-decoration: none;
+}
+
+#nav ul a{
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: #777777;
+}
+
+#navMenu a{
+    display: inline;  
+}
+
+.nbsp{
+    height: 20px;
+}
+
+#catalog{
+    float: left;
+    padding-left: 180px;
+    height: 890px;
+}
+
+#catalog ul a{
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: #777777;
+}
+
+#catalog a {
+    display: block;
+}
+
+#catalog ul a:hover{
+    text-decoration: underline;
+}
+
+#childCatalog a li{
+    position: absolute;
+}
+/* 
+#childCataloga a li a:nth-child(1){
+    color: black;
+} */
+
+#textAboutCompany {
+    padding-top: 890px;
+    padding-left: 350px;
+    padding-right: 180px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: #777777;
+}
+
+#left{
+    float: left;
+    width: 340px;
+}
+
+#right{
+    padding-left:50px;
+    float: left;
+    width: 340px;
+}
+
+.block1{
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    left: 350px;
+    float: left;
+}
+
+.block2{
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    left: 615px;
+    float: left;
+}
+
+.block3{
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    left: 880px;
+    float: left;
+}
+
+.block4{
+    position: relative;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    left: 7px;
+    top: 400px;
+    float: left;
+}
+
+.block5{
+    position: relative;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+    left: 22px;
+    top: 400px;
+    float: left;
+}
+
+#square1{
+    width: 210px;
+    height: 210px; 
+    margin-top: 22px;
+    margin-left: 21px;
+    background-color: #ffffff;
+}
+
+#content{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: #444444;
+
+}
+
+.block1 p{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-left: 21px;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+
+.block1 h1{
+    padding-top: 40px;
+    margin-left: 21px;
+}
+
+.block2 p{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-left: 21px;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+
+.block2 h1{
+    padding-top: 40px;
+    margin-left: 21px;
+}
+
+.block3 p{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-left: 21px;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+
+.block3 h1{
+    padding-top: 40px;
+    margin-left: 21px;
+}
+
+.block4 p{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-left: 21px;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+
+.block4 h1{
+    padding-top: 40px;
+    margin-left: 21px;
+}
+
+.block5 p{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-left: 21px;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+
+.block5 h1{
+    padding-top: 40px;
+    margin-left: 21px;
+}
+
+.page{
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 700px;
+}
+
+.page label{
+    font-size: 18px;
+    font-family: sans-serif;
+    color:#767676;
+}
+
+.page input[checked]{
+    font-size: 22px;
+}
+
+.modalbackground {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.5);
+    z-index:100; 
+    opacity:0;
+    pointer-events: none;
+}
+
+.modalbackground:target {
+    opacity: 1; 
+    pointer-events: auto;
+}    
+
+.modalwindow {
+    padding-top: 32px;;
+    max-width: 465px;
+    height: 580px;
+    margin: 10% auto;
+    padding: 2%;
+    background: #fff;
+}  
+
+.modalwindow{
+text-align: center;
+color: #535353;
+}
+
+.modalwindow #name {
+    margin-top: 32px;
+}
+
+.modalwindow a {
+position: absolute;
+display: block;
+color: #fff;
+background: #777;
+text-align: center;
+margin-left:488px;
+margin-top:-69px;
+}
+
+ .modalwindow{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+ }
+
+ .text{
+    width: 342px;
+    height: 40px; 
+ }
+
+ #email{
+        border-color: red;   
+        opacity: 0.5;
+        font-style: italic; 
+}
+
+.someText{
+    padding-top:20px;
+}
+
+.modalwindow #close {
+    margin-top: 10px;
+    color: #fff;
+    background: #777777;
+    width: 128px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+}

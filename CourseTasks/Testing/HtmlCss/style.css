@@ -279,14 +279,6 @@ label, a{
     text-decoration: underline;
 }
 
-#childCatalog a li{
-    position: absolute;
-}
-/* 
-#childCataloga a li a:nth-child(1){
-    color: black;
-} */
-
 #textAboutCompany {
     padding-top: 890px;
     padding-left: 350px;
@@ -340,7 +332,7 @@ label, a{
     width: 250px;
     height: 380px;
     background-color: #dcdcdc;
-    left: 7px;
+    left: 20px;
     top: 400px;
     float: left;
 }
@@ -350,7 +342,7 @@ label, a{
     width: 250px;
     height: 380px;
     background-color: #dcdcdc;
-    left: 22px;
+    left: 36px;
     top: 400px;
     float: left;
 }
@@ -381,9 +373,10 @@ label, a{
 }
 
 
-.block1 h1{
-    padding-top: 40px;
+.block1 .price{
     margin-left: 21px;
+    font-size: 22px;
+    padding-top: 20px;
 }
 
 .block2 p{
@@ -396,9 +389,10 @@ label, a{
 }
 
 
-.block2 h1{
-    padding-top: 40px;
+.block2 .price{
+    padding-top: 20px;
     margin-left: 21px;
+    font-size: 22px;
 }
 
 .block3 p{
@@ -411,9 +405,10 @@ label, a{
 }
 
 
-.block3 h1{
-    padding-top: 40px;
+.block3 .price{
+    padding-top: 20px;
     margin-left: 21px;
+    font-size: 22px;
 }
 
 .block4 p{
@@ -426,9 +421,10 @@ label, a{
 }
 
 
-.block4 h1{
-    padding-top: 40px;
+.block4 .price{
+    padding-top: 20px;
     margin-left: 21px;
+    font-size: 22px;
 }
 
 .block5 p{
@@ -441,9 +437,10 @@ label, a{
 }
 
 
-.block5 h1{
-    padding-top: 40px;
+.block5 .price{
+    padding-top: 20px;
     margin-left: 21px;
+    font-size: 22px;
 }
 
 .page{

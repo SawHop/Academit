@@ -1,0 +1,16 @@
+*{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+body{
+    background:#fafafad3;
+}
+
+.logs{
+    padding-left: 10px;
+}
+
+.block{
+    padding-left: 40px;
+}
